@@ -52,7 +52,7 @@ module.exports = {
     lastUpdated: "Last Updated",
     author: "WXL570CN",
     authorAvatar: "/avatar.jpg",
-    record: "xxxx",
+    record: "570",
     startYear: "2017",
   },
   markdown: {

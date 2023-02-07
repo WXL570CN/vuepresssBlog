@@ -1,4 +1,4 @@
-# 进入 public
+# 发布博客
 cd public
 
 git init
