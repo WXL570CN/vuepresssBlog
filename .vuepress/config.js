@@ -58,4 +58,5 @@ module.exports = {
   markdown: {
     lineNumbers: true,
   },
+  plugins: [["@vuepress-reco/vuepress-plugin-extract-code", true]],
 };
