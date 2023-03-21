@@ -1,8 +1,8 @@
 module.exports = {
   title: "WXL570CN's Blog",
   description: "姑妄听之，如是我闻",
-  base: '/react-visual-drag-demo/',
-  dest: "dist",
+  base: '/react-visual-drag-demo/my-blog',
+  dest: "my-blog",
   locales: {
     "/": {
       lang: "zh-CN",

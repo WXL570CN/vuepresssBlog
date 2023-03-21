@@ -36,7 +36,6 @@ git_push_retry
 # 构建并重命名dist文件夹
 echo "构建并重命名dist文件夹..."
 npm run build
-mv dist my-blog
 
 # 将my-blog拷贝至WXL570CN.github.io项目
 echo "将my-blog拷贝至WXL570CN.github.io项目..."
