@@ -2,9 +2,9 @@
 title: Notes---时间格式化 
 date: 2020-10-23 09:32:02
 categories:
-- Notes
+- [Notes]
 tags:
-- JavaScript
+- [date format]
 ---
 
 安装 moment.js

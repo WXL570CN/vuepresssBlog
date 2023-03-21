@@ -1,7 +1,7 @@
 module.exports = {
   title: "WXL570CN's Blog",
   description: "姑妄听之，如是我闻",
-  dest: "public",
+  dest: "dist",
   locales: {
     "/": {
       lang: "zh-CN",

@@ -1,7 +1,7 @@
 ---
 title: Vue3---learning_note（一）
 categories:
-  - Vue
+- [Notes]
 tags:
 - Vue
 - Vue3

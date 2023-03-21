@@ -2,9 +2,9 @@
 title: LeetCode刷题-数组01
 date: 2021-06-13 09:18:55
 categories:
-- 刷题
+- [Notes]
 tags:
-- JavaScript
+- leetCode
 ---
 
 # [力扣4.寻找两个正序数组的中位数](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)

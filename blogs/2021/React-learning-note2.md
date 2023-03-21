@@ -1,7 +1,7 @@
 ---
 title: React---learning_note（二）
 categories:
-  - React
+- [Notes]
 tags:
 - React
 date: 2021-08-25 09:26:40

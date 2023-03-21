@@ -2,8 +2,7 @@
 title: Notes---HTML_review
 date: 2018-08-20 09:14:50
 categories:
-- [Html]
-- Notes
+- [Notes]
 tags:
 - Html
 ---

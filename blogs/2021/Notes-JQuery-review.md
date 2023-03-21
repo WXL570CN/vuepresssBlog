@@ -3,7 +3,6 @@ title: Notes---JQuery_review
 date: 2021-07-31 09:18:55
 categories:
 - [Notes]
-- [jQuery]
 tags:
 - jQuery
 ---

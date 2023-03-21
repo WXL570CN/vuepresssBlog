@@ -2,9 +2,9 @@
 title: 排序算法
 date: 2020-06-13 09:18:55
 categories:
-- 排序
+- Notes
 tags:
-- JavaScript
+- 排序
 ---
 
 ## 冒泡排序

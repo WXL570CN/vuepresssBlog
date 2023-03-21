@@ -1,21 +1,22 @@
 ---
-title: react-query
-date: 2022-06-04 09:18:55
+title: React hooks
+date: 2023-02-20
 categories:
-- [React]
-- [Hook]
+- [Notes]
 tags:
 - react
-- react-query
+- hooks
 ---
 
-### 一、介绍
+## 一、[react-query](https://tanstack.com/query/latest)
+[GitHub地址]()
+### 1、介绍
 react-query 是一个异步状态管理的hook，内置了loading,error等状态，无疑是管理服务器状态的最佳库之一。
 
-### 二、为什么
+### 2、为什么
 提供了很多便利的API（例如无限加载，分页等等，不需要开发者自己再去维护很多状态
 
-### 三、使用
+### 3、使用
 #### 3.1、useQuery
 useQuery接收两个参数，第一个是唯一表示key，第二个是一个fetch的异步函数。
 key是一个唯一的字符串，用来标识query，key还可以是个数组，存放query的一些依赖变量，当依赖发生变化时会重新发起请求。
@@ -53,3 +54,31 @@ const Todos = (props) => {
 
 ```
 
+## 二、[ahooks](https://ahooks.js.org/zh-CN/)
+[GitHub地址](https://github.com/alibaba/hooks)
+
+## 三、[useHooks](https://usehooks.com/)
+[GitHub地址](https://github.com/uidotdev/usehooks)
+
+## 四、[react-use](https://github.com/streamich/react-use)
+[GitHub地址]()
+
+## 五、[SWR](https://swr.vercel.app/zh-CN)
+[GitHub地址](https://github.com/vercel/swr)
+
+## 六、[beautiful-react-hooks](https://antonioru.github.io/beautiful-react-hooks/)
+[GitHub地址](https://github.com/antonioru/beautiful-react-hooks)
+
+[中文文档](https://github.com/antonioru/beautiful-react-hooks/blob/master/docs/README.zh-CN.md)
+
+## 七、react-hanger
+[GitHub地址](https://github.com/kitze/react-hanger)
+
+## 八、[react-use-gesture](https://use-gesture.netlify.app/docs/)
+[GitHub地址](https://github.com/pmndrs/use-gesture)
+
+## 九、use-scroll-position
+[GitHub地址](https://github.com/n8tb1t/use-scroll-position)
+
+## 十、[react-use-form-state](https://react-use-form-state.vercel.app/)
+[GitHub地址](https://github.com/wsmd/react-use-form-state)

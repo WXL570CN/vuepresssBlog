@@ -2,13 +2,11 @@
 title: 面试长谈
 date: 2021-07-28 09:18:55
 categories:
-- [面试]
+- [Notes]
 tags:
 - 面试
-- Notes
-- SPA
-- SSR
 ---
+
 ## 一、HTML5
 ### 1、脚本的加载
 script脚本会阻塞html的解析
@@ -375,12 +373,12 @@ class Promise {
 }
 ```
 
-### Generator 函数
+### 10、Generator 函数
 ES6 提供的一种异步编程解决方案  
 调用 Generator 函数，返回一个遍历器对象，代表 Generator 函数的内部指针。以后，每次调用遍历器对象的next方法，就会返回一个有着value和done两个属性的对象。value属性表示当前的内部状态的值，是yield表达式后面那个表达式的值；done属性是一个布尔值，表示是否遍历结束。
-### async 函数
+### 11、async 函数
 Generator 函数的语法糖  
-#### async 函数和 generator区别
+### 12、async 函数和 generator区别
 async函数就是将 Generator 函数的星号（*）替换成async，将yield替换成await，仅此而已。
 ```js
 const gen = function* () {
@@ -416,10 +414,10 @@ co模块约定，yield命令后面只能是 Thunk 函数或 Promise 对象，而
 async函数的返回值是 Promise 对象，这比 Generator 函数的返回值是 Iterator 对象方便多了。你可以用then方法指定下一步的操作。  
 进一步说，async函数完全可以看作多个异步操作，包装成的一个 Promise 对象，而await命令就是内部then命令的语法糖。
 
-### 10、事件委托
+### 13、事件委托
 利用事件冒泡的原理，自己的所触发的事件，让他的父元素代替执行
 
-### 11、如何阻止事件冒泡和默认事件
+### 14、如何阻止事件冒泡和默认事件
 阻止事件冒泡：  
 `e.stopPropagation();` //标准浏览器  
 `event.canceBubble=true;` //ie9 之前
@@ -427,31 +425,31 @@ async函数的返回值是 Promise 对象，这比 Generator 函数的返回值�
 `return false`  
 `e.preventDefault();`
 
-### 12、”==”和“===”的不同
+### 15、”==”和“===”的不同
 前者会自动转换类型
 后者不会
 
-### 13、请简要描述 web 前端性能需要考虑哪方面，你的优化思路
+### 16、请简要描述 web 前端性能需要考虑哪方面，你的优化思路
 减少 http 请求  
 小图弄成大图  
 合理的设置缓存  
 资源合并、压缩  
 将外部的 js 文件置底
 
-### 14、哪些操作会造成内存泄漏？
+### 17、哪些操作会造成内存泄漏？
 内存泄漏指任何对象在您不再拥有或需要它之后仍然存在。
 1. setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。
 2. 闭包
 3. 控制台日志
 4. 循环（在两个对象彼此引用且彼此保留时，就会产生一个循环）
 
-### 15、请你谈谈 Cookie 的弊端？
+### 18、请你谈谈 Cookie 的弊端？
 缺点：  
 1. `Cookie`数量和长度的限制。每个 domain 最多只能有 20 条 cookie，每个 cookie 长度不能超过 4KB，否则会被截掉。
 2. 安全性问题。如果 cookie 被人拦截了，那人就可以取得所有的 session 信息。即使加密也与事无补，因为拦截者并不需要知道 cookie 的意义，只要原样转发 cookie 就可以达到目的了。
 3. 有些状态不可能保存在客户端。例如，为了防止重复提交表单，我们需要在服务器端保存一个计数器。如果我们把这个计数器保存在客户端，那么它起不到任何作用。
 
-### 16、iframe 的优缺点？  
+### 19、iframe 的优缺点？  
 优点：  
 1. 解决加载缓慢的第三方内容如图标和广告等的加载问题  
 2. Security sandbox  
@@ -461,16 +459,16 @@ async函数的返回值是 Promise 对象，这比 Generator 函数的返回值�
 2. 即时内容为空，加载也需要时间  
 3. 没有语意  
 
-### 17、闭包特性及缺点
+### 20、闭包特性及缺点
 闭包就是能够读取其他函数内部变量的函数。
 闭包的缺点：滥用闭包函数会造成内存泄露，因为闭包中引用到的包裹函数中定义的变量都永远不会被释放，所以我们应该在必要的时候，及时释放这个闭包函数
 
-### 18、三种弹窗的单词以及三种弹窗的功能
+### 21、三种弹窗的单词以及三种弹窗的功能
 alert  
 confirm：带确认取消按钮  
 prompt：提供了一个用户可输入文本的输入框，同时带确认取消按钮
 
-### 19、BOM 对象有哪些，列举 window 对象？
+### 22、BOM 对象有哪些，列举 window 对象？
 1. window 对象 ，是 JS 的最顶层对象，其他的 BOM 对象都是 window 对象的属性；  
 2. document 对象，文档对象；  
 3. location 对象，浏览器当前 URL 信息；  
@@ -478,7 +476,7 @@ prompt：提供了一个用户可输入文本的输入框，同时带确认取�
 5. screen 对象，客户端屏幕信息；  
 6. history 对象，浏览器访问历史信息；
 
-### 20、this指向问题
+### 23、this指向问题
 - 以函数形式调用时，this永远都是window  
 - 以方法的形式调用时，this是调用方法的对象  
 - 以构造函数的形式调用时，this是新创建的那个对象  
@@ -509,7 +507,98 @@ for(var i = 0 ; i < elements.length; i++){
 <button onclick="'use strict'; alert(this.tagName.toLowerCase());">
 <!-- button -->
 ```
-### 21、微任务和宏任务
+### 24、微任务和宏任务
+
+### 25、一道面试题
+```js
+// 今日头条面试题
+async function async1() {
+    console.log('async1 start')
+    await async2()
+    console.log('async1 end')
+}
+async function async2() {
+    console.log('async2')
+}
+console.log('script start')
+setTimeout(function () {
+    console.log('settimeout')
+})
+async1()
+new Promise(function (resolve) {
+    console.log('promise1')
+    resolve()
+}).then(function () {
+    console.log('promise2')
+})
+console.log('script end')
+```
+题目的本质，就是考察setTimeout、promise、async await的实现及执行顺序，以及JS的事件循环的相关问题。
+
+#### setTimeout
+> settimeout的回调函数放到宏任务队列里，等到执行栈清空以后执行；
+```js
+console.log('script start')	//1. 打印 script start
+setTimeout(function(){
+    console.log('settimeout')	// 4. 打印 settimeout
+})	// 2. 调用 setTimeout 函数，并定义其完成后执行的回调函数
+console.log('script end')	//3. 打印 script start
+// 输出顺序：script start->script end->settimeout
+```
+
+#### Promise
+> Promise本身是同步的立即执行函数， 当在executor中执行resolve或者reject的时候, 此时是异步操作， 会先执行then/catch等，当主栈完成后，才会去调用resolve/reject中存放的方法执行  
+> promise.then里的回调函数会放到相应宏任务的微任务队列里，等宏任务里面的同步代码执行完再执行
+```js
+console.log('script start')
+let promise1 = new Promise(function (resolve) {
+    console.log('promise1')
+    resolve()
+    console.log('promise1 end')
+}).then(function () {
+    console.log('promise2')
+})
+setTimeout(function(){
+    console.log('settimeout')
+})
+console.log('script end')
+// 输出顺序: script start->promise1->promise1 end->script end->promise2->settimeout
+```
+
+#### async/await
+> async函数表示函数里面可能会有异步方法，await后面跟一个表达式，async方法执行时，遇到await会立即执行表达式，然后把表达式后面的代码放到微任务队列里，让出执行栈让同步代码先执行。
+```js
+async function async1(){
+   console.log('async1 start');
+    await async2();
+    console.log('async1 end')
+}
+async function async2(){
+    console.log('async2')
+}
+
+console.log('script start');
+async1();
+console.log('script end')
+
+// 输出顺序：script start->async1 start->async2->script end->async1 end
+```
+
+#### 总结
+setTimeout 里的执行函数 和 Promise.then 中定义的执行函数都会被放到相应宏任务的微任务队列里，等宏任务里面的同步代码执行完再执行
+#### 结果
+搞明白之后，这道面试题就不难了  
+答案：
+```
+script start
+async1 start
+async2
+promise1
+script end
+async1 end
+promise2
+settimeout
+```
 
 
 

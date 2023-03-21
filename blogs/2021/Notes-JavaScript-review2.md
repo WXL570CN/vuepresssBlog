@@ -3,7 +3,6 @@ title: Notes---JavaScript_review（二）
 date: 2021-06-10 09:14:50
 categories:
   - Notes
-  - JavaScript
 tags:
   - JavaScript
 ---

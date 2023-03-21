@@ -1,10 +1,9 @@
 ---
-title: Vue---手写一个分页组件
+title: Vue---实现一个分页组件
 date: 2021-05-20 09:18:55
 categories:
-- [Vue]
+- [Components]
 tags:
-- Vue
 - Pagination
 ---
 

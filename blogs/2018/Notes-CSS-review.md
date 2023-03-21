@@ -2,8 +2,7 @@
 title: Notes---CSS_review
 date: 2018-09-17 09:14:50
 categories:
-- Notes
-- [Css]
+- [Notes]
 tags:
 - Css
 ---

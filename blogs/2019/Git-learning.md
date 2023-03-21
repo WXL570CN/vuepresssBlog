@@ -2,10 +2,9 @@
 title: Notes---Git_learning
 date: 2018-03-21 09:14:50
 categories:
-- Git
+- [Notes]
 tags:
 - Git
-- submodule
 ---
 
 ## 1、初始化

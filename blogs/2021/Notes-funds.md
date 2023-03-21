@@ -2,7 +2,7 @@
 title: 基金笔记
 date: 2021-06-02 09:18:55
 categories:
-- [基金]
+- [Notes]
 tags:
 - 基金
 ---

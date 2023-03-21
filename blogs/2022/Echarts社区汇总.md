@@ -4,7 +4,7 @@ date: 2022-06-04 09:18:55
 categories:
 - [Days]
 tags:
-- url
+- Echarts
 ---
 
 [http://chartlib.datains.cn/echarts](http://chartlib.datains.cn/echarts)

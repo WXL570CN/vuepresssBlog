@@ -2,12 +2,9 @@
 title: 实现多行文本溢出隐藏效果
 date: 2021-06-02 09:18:55
 categories:
-- [Css]
-- [JavaScript]
+- [Notes]
 tags:
-- Css
-- JavaScript
-- line-hidden
+- 超出隐藏
 ---
 
 ```css

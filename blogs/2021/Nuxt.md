@@ -2,7 +2,7 @@
 title: Nuxt.js 小记
 date: 2021-06-22 09:18:55
 categories:
-- Nuxt
+- [Notes]
 tags:
 - Nuxt
 ---

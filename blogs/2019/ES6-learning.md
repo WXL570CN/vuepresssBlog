@@ -2,8 +2,7 @@
 title: Notes---ES6_learning
 date: 2019-04-16 09:14:50
 categories:
-- ES6
-- JavaScript
+- [Notes]
 tags:
 - ES6
 ---
