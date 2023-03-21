@@ -53,6 +53,6 @@ git commit -m "更新博客"
 git_push_retry
 
 # 删除vuepressBlog项目中的my-blog
-echo "删除 vuepressBlog 项目中的my-blog..."
-cd ../vuepressBlog
+echo "删除 vuepresssBlog 项目中的my-blog..."
+cd ../vuepresssBlog
 rm -rf my-blog
