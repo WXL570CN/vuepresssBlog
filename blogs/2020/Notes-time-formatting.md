@@ -4,7 +4,7 @@ date: 2020-10-23 09:32:02
 categories:
 - [Notes]
 tags:
-- [date format]
+- date format
 ---
 
 安装 moment.js

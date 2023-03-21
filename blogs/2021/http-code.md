@@ -4,7 +4,7 @@ date: 2021-06-04 09:18:55
 categories:
 - [Notes]
 tags:
-- [Http Status Code]
+- Http Status Code
 ---
 
 

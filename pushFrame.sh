@@ -49,7 +49,7 @@ cp -R my-blog/ ../WXL570CN.github.io/my-blog/
 echo "提交WXL570CN.github.io项目代码..."
 cd ../WXL570CN.github.io
 git add .
-git commit -m "更新拖拽Demo"
+git commit -m "更新博客"
 git_push_retry
 
 # 删除vuepressBlog项目中的my-blog
