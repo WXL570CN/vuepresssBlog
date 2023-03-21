@@ -33,8 +33,8 @@ git commit -m "$messageA"
 git_push_retry
 
 
-# 构建并重命名dist文件夹
-echo "构建并重命名dist文件夹..."
+# 构建
+echo "构建中..."
 npm run build
 
 # 将my-blog拷贝至WXL570CN.github.io项目
@@ -50,8 +50,3 @@ cd ../WXL570CN.github.io
 git add .
 git commit -m "更新博客"
 git_push_retry
-
-# 删除vuepressBlog项目中的my-blog
-echo "删除 vuepresssBlog 项目中的my-blog..."
-cd ../vuepresssBlog
-rm -rf my-blog
