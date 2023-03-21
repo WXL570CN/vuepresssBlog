@@ -34,7 +34,7 @@ git_push_retry
 
 
 # 构建
-echo "构建中..."
+echo "构建..."
 npm run build
 
 # 将my-blog拷贝至WXL570CN.github.io项目
