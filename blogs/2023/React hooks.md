@@ -114,6 +114,9 @@ const App = () => {
 };
 ```
 
+#### 2.3、useInfiniteQuery
+用于无限加载的列表，非常强大，让构建无限加载组件变得简单。
+
 ## 二、[ahooks](https://ahooks.js.org/zh-CN/)
 
 [GitHub 地址](https://github.com/alibaba/hooks)
