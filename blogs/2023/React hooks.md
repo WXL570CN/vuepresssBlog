@@ -48,7 +48,12 @@ key 还可以是个数组，存放 query 的一些依赖变量，当依赖发生
 const { getTodos } from '.../todo-api'
 
 const Todos = (props) => {
-  const { isLoading, error, data } = useQuery(
+  const { 
+    data, //这个就是请求成功回来的数据
+    isLoading, //true表示数据在获取的路上
+    error,//错误对象，如果存在则包含相关的错误信息
+    refetch，//这个还挺实用的，你可以在需要的地方或需要更新数据时调用，则会触发这个请求，比如enabled=false时
+  } = useQuery(
     queryKey: ['todos', id],
     queryFn: getTodos,
     // react-query也提供了转换器，并且也只在有数据的时候才会被调用
@@ -60,7 +65,10 @@ const Todos = (props) => {
         []
       ),
       // enable：传入的值类型必须是Boolean，当参数值为false时，将会禁止请求接口
-      enable: !!id
+      enable: !!id,
+      retry, //请求失败后，请求的重试次数，也可以为boolean，true为无数次重试，false则不会重试
+      refetchOnWindowFocus，//页面取得焦点时，重新获取数据，默认为true
+      staleTime, //指定缓存时长，以毫秒为单位。
     }
   );
 
