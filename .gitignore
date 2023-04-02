@@ -1,4 +1,3 @@
-node_modules/
-yarn.lock
-yarn.error
-my-blog/
+.vuepress/.cache
+.vuepress/.temp
+node_modules

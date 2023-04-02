@@ -1,0 +1,16 @@
+/* 主页博客文章标题加粗 */
+.post-item-container .title {
+  font-weight: 600 !important;
+}
+/* 分类列表取消border，改用shadow，视觉高度调整 */
+.home-blog-content .info-wrapper .category-wrapper .category-item {
+  border: none !important;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1) !important;
+  .category-link {
+    padding: .8rem 1rem !important;
+  }
+}
+
+  .banner-brand__wrapper .banner-brand__content .title {
+    line-height: 1.2 !important;
+  }
