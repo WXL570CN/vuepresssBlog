@@ -108,4 +108,6 @@ export default defineUserConfig({
     // },
   }),
   // debug: true,
+  base: '/my-blog/',
+  dest: 'my-blog'
 });
