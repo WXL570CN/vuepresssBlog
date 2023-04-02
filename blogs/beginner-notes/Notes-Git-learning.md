@@ -4,7 +4,7 @@ tags:
 - Git
 ---
 
-# Git learning
+# 「初学笔记」Git
 
 ## 1、教程
 - [阮一峰的Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)

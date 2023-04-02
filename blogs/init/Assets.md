@@ -5,7 +5,7 @@ tags:
  - common.css
 ---
 
-# Assets
+# 「项目初始化」Assets
 
 ### reset.css
 ```css

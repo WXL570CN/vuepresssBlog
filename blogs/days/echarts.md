@@ -1,9 +1,12 @@
 ---
-title: Echarts社区汇总
 date: 2022/06/04 
 tags:
 - Echarts
 ---
+
+# 「日常」Echarts
+
+## 非官方社区汇总
 
 [http://chartlib.datains.cn/echarts](http://chartlib.datains.cn/echarts)
 

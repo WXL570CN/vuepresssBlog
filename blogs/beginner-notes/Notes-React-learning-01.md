@@ -1,9 +1,9 @@
 ---
-title: React：learning_note（一）
 tags:
 - React
 date: 2021/07/12
 ---
+# 「初学笔记」React（一）
 
 ## 一、使用脚手架
 `npx create-react-app 项目名`

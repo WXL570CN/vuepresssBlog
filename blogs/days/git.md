@@ -1,8 +1,7 @@
 ---
-title: Git相关
 date: 2022/06/04
 ---
-# Git相关
+# 「日常」Git
 ## 一、commit规范
 - **feat**：添加新特性
 - **refactor**：代码重构，没有添加新功能或者修复

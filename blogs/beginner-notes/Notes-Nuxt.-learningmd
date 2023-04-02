@@ -1,10 +1,9 @@
 ---
-title: Nuxt.js
 date: 2021/06/22
 tags:
 - Nuxt
 ---
-
+# 「初学笔记」Nuxt.js
 ## 一、nuxt.config.js
 ### head
 该配置项用于配置应用默认的 meta 标签。

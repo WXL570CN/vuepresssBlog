@@ -1,10 +1,9 @@
 ---
-title: Notes：Webpack_learning
 date: 2019/05/27
 tags:
 - Webpack
 ---
-
+# 「初学笔记」Webpack
 > 功能：将ES6等代码编译成浏览器能识别的代码
 > 注意：webpack能处理js/json，但不能处理css/img等
 

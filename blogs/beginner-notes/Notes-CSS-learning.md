@@ -1,9 +1,10 @@
 ---
-title: Notes---CSS_review
 date: 2018/09/17
 tags:
 - Css
 ---
+
+# 「初学笔记」CSS
 
 ## 字体
 字号尽量用偶数字号，奇数字号有可能出问题  

@@ -1,10 +1,10 @@
 ---
-title: Notes：JavaScript_review（一）
 date: 2021/05/27
 tags:
 - JavaScript
 ---
 
+# 「初学笔记」JS（一）
 ## 原型对象
 
 ### 一、概念

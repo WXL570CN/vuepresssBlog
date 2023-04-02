@@ -1,10 +1,10 @@
 ---
-title: Notes：JavaScript_review（二）
 date: 2021/06/10
 tags:
   - JavaScript
 ---
 
+# 「初学笔记」JS（二）
 ## 一、闭包
 
 > [摘自知乎文章：「每日一题」JS 中的闭包是什么？](https://zhuanlan.zhihu.com/p/22486908)  

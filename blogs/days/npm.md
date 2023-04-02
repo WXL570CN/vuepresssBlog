@@ -1,10 +1,10 @@
 ---
-title: NPM相关
 date: 2022/06/04 
 tags:
 - Npm
 ---
 
+# 「日常」NPM
 ## 插件
 ### rimraf：快速删除文件，比如用来删除node_modules
 ```sh

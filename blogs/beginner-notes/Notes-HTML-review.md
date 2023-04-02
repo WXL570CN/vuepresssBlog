@@ -1,10 +1,10 @@
 ---
-title: Notes：HTML_review
 date: 2018/08/20
 tags:
 - Html
 ---
 
+# 「初学笔记」HTML
 ## 标签
 ```
 - 水平线标签：<hr />单标签，后面的/可加可不加，不加有可能会出错</P>

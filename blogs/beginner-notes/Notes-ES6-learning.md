@@ -1,10 +1,10 @@
 ---
-title: Notes：ES6_learning
 date: 2019/04/16
 tags:
 - ES6
 ---
 
+# 「初学笔记」ES6
 ## 一、let 与 const
 ### 1、不存在变量提升
 ```js

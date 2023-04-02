@@ -1,9 +1,10 @@
 ---
-title: React：learning_note（二）
 tags:
 - React
 date: 2021/08/25
 ---
+
+# 「初学笔记」React（二）
 ## 一、路由
 ### 1、什么是路由？
 - 一个路由就是一个映射关系(key:value)

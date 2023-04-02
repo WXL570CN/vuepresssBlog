@@ -1,10 +1,11 @@
 ---
-title: Notes：NodeJs_review
 date: 2019/11/27
 tags:
 - Node.js
 ---
 
+
+# 「初学笔记」NodeJs
 ## 一、简单的说 Node.js 就是运行在服务端的 JavaScript。运行环境
 ### 阻塞/非阻塞I/O 
 阻塞I/O：进程遇到I/O，则休眠等其执行完，再进行下一步  

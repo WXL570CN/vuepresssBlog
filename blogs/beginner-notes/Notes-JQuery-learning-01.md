@@ -1,10 +1,10 @@
 ---
-title: Notes：JQuery_review
 date: 2021/07/31
 tags:
 - jQuery
 ---
 
+# 「初学笔记」JQuery
 ## 如何用jQuery批量替换一段HTML中文本的数字
 ### 要求
 1. 使用**jQuery和正则**将**HTML中（含不同程度嵌套标签）**的文本内含有的数字**批量替换**为其他字符，如*号

@@ -6,7 +6,7 @@ tags:
  - localStorage
 ---
 
-# Utils
+# 「项目初始化」Utils
 
 ## 常用库
 - [lodash.js：一个一致性、模块化、高性能的 JavaScript 实用工具库](https://www.lodashjs.com/)

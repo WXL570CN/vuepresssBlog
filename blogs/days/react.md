@@ -1,14 +1,15 @@
 ---
-title: React笔记
 date: 2022/06/04 
 tags:
 - React
 ---
 
+# 「日常」React
+
 ## useImperativeHandle
 `useImperativeHandle` 需搭配 `forwardRef` 一起使用
 
-```
+```tsx
 // 父组件
 const testRef =  useRef(null)
 const getList = () => {
@@ -43,7 +44,7 @@ const Child = react.forwardRef(props, ref) {
 
 再封装一层
 
-```js
+```tsx
 const A = (props)  => {
 	const { refInstance } = props
 
