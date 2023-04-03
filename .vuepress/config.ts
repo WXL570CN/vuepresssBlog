@@ -1,6 +1,7 @@
+import { getDirname, path } from "@vuepress/utils";
 import { defineUserConfig } from "vuepress";
-import type { DefaultThemeOptions } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   title: "WXL570CN's blog",
@@ -107,7 +108,13 @@ export default defineUserConfig({
     //   // hideComments: true // 隐藏评论
     // },
   }),
+  markdown: {
+    importCode: {
+      handleImportPath: (str) => 
+        str.replace(/^@preview/, path.resolve(__dirname, "vue-previews")),
+    },
+  },
   // debug: true,
-  base: '/my-blog/',
-  dest: 'my-blog'
+  base: "/my-blog/",
+  dest: "my-blog",
 });

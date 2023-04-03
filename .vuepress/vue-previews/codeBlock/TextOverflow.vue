@@ -1,0 +1,21 @@
+<template>
+  <div class="bruce flex-ct-x">
+    <div class="multiline-text line-5">
+      <input class="multiline-text-checkbox" id="btn" type="checkbox" hidden />
+      <p class="multiline-text-wrapper">
+        <label
+          for="btn"
+          class="multiline-text-button"
+          data-true="展开"
+          data-false="收起"
+        ></label>
+        网易公司（NASDAQ:
+        NTES），1997年由创始人兼CEO丁磊先生在广州创办，2000年在美国NASDAQ股票交易所挂牌上市，是中国领先的互联网技术公司。在开发互联网应用、服务及其它技术方面，始终保持中国业界领先地位。
+      </p>
+    </div>
+  </div>
+</template>
+
+<style lang="scss">
+@import './TextOverflow.scss';
+</style>
