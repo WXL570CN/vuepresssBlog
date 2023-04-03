@@ -7,17 +7,22 @@ tags:
 # 「代码块」文本溢出
 
 ## CSS实现
-```css
-<p>
-  这是一段测试文字，这是一段测试文字，这是一段测试文字，这是一段测试文字。
+
+### 单行文本溢出隐藏
+:::: code-group
+::: code-group-item HtTextOverflow.html
+```html
+<p class='ell'>
+  网易公司（NASDAQ:NTES），1997年由创始人兼CEO丁磊先生在广州创办，2000年在美国NASDAQ股票交易所挂牌上市，是中国领先的互联网技术公司。在开发互联网应用、服务及其它技术方面，始终保持中国业界领先地位。
 </p>
 ```
-### 单行文本溢出隐藏
-```css
-overflow: hidden;
-text-overflow: ellip;
-white-space: nowrap;
-```
+:::
+::: code-group-item TextOverflow.scss
+@[code{258-259}](@preview/init/common.css)
+
+:::
+::::
+
 ### 多行文本溢出隐藏
 > 使用`:checked`切换文本溢出
 :::: code-group

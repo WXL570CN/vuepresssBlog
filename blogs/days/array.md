@@ -96,7 +96,7 @@ list.find((el) => el === 6); // undefined
 
 `indexOf()` 方法返回在数组中可以找到一个给定元素的第一个索引，如果不存在，则返回`-1`。
 
-```scss
+```js
 const list = [😀, 😫, 😀, 😫, 🤪];
 list.indexOf(😀); // 0
 list.indexOf(😡); // -1
@@ -110,14 +110,14 @@ list.indexOf(6); // -1
 
 ### Array.lastIndexOf()
 
-```css
+```js
 arr.lastIndexOf(searchElement[, fromIndex])
 
 ```
 
 `lastIndexOf()` 方法返回指定元素（也即有效的 JavaScript 值或变量）在数组中的最后一个的索引，如果不存在则返回 -1。从数组的后面向前查找，从 `fromIndex` 处开始。
 
-```scss
+```js
 const list = [😀, 😫, 😀, 😫, 🤪];
 list.lastIndexOf(😀); // 3
 list.lastIndexOf(😀, 1); // 0
@@ -369,7 +369,7 @@ console.log(range(10)); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 `Array.of()` 和 Array 构造函数之间的区别在于处理整数参数：`Array.of(7)` 创建一个具有单个元素 7 的数组，而 Array(7) 创建一个长度为7的空数组（注意：这是指一个有7个空位(empty)的数组，而不是由7个 `undefined` 组成的数组）。
 
-```scss
+```js
 Array.of(7);       // [7]
 Array.of(1, 2, 3); // [1, 2, 3]
 
@@ -396,7 +396,7 @@ Array.isArray(5); // false
 
 `at()` 方法接收一个整数值并返回该索引的项目，允许正数和负数。负整数从数组中的最后一个项目开始倒数。
 
-```scss
+```js
 const list = [😀, 😫, 😀, 😫, 🤪];
 list.at(1); // 😫
 
@@ -524,4 +524,4 @@ const checkRepeat = (arr， key1,  key2, ...) => {
 `map`：`map` 最慢的原因是因为 `map` 会返回一个新的数组，数组的创建和赋值会导致分配内存空间，因此会带来较大的性能开销。  
 
 
-原文地址：[28个Javascript数组方法](https://juejin.cn/post/7095902024331427870)
+引自：[28个Javascript数组方法](https://juejin.cn/post/7095902024331427870)
