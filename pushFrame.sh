@@ -47,6 +47,7 @@ cp -R my-blog/ ../WXL570CN.github.io/my-blog/
 # 提交WXL570CN.github.io项目代码至Github
 echo "提交WXL570CN.github.io项目代码..."
 cd ../WXL570CN.github.io
+git pull
 git add .
 git commit -m "更新博客"
 git_push_retry
