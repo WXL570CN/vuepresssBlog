@@ -5,6 +5,8 @@ tags:
 ---
 
 # 「初学笔记」ES6
+
+## [ECMAScript 6 入门——阮一峰](https://es6.ruanyifeng.com/)
 ## 一、let 与 const
 ### 1、不存在变量提升
 ```js

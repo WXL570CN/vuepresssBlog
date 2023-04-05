@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 绝对定位 + margin-top/left + top/left */
+    .father {
+      width: 500px;
+      height: 500px;
+      background: black;
+      position: relative
+    }
+    .children {
+      width: 200px;
+      height: 200px;
+      background: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -100px;
+      margin-left: -100px;
+    }
+    /* 绝对定位 + margin-top/left + calc() */
+    .father {
+      width: 500px;
+      height: 500px;
+      background: black;
+      position: relative
+    }
+    .children {
+      width: 200px;
+      height: 200px;
+      background: white;
+      position: absolute;
+      top: calc(50% - 100px);
+      left: calc(50% - 100px);
+    }
+    /* 绝对定位 + transform + top/left */
+    .father {
+      width: 500px;
+      height: 500px;
+      background: black;
+      position: relative
+    }
+    .children {
+      width: 200px;
+      height: 200px;
+      background: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    /* 绝对定位 + margin: auto */
+    .father {
+      width: 500px;
+      height: 500px;
+      background: black;
+      position: relative
+    }
+    .children {
+      width: 200px;
+      height: 200px;
+      background: white;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    /* flex布局 */
+    .father {
+      width: 500px;
+      height: 500px;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .children {
+      width: 200px;
+      height: 200px;
+      background: white;
+    }
+    /* flex布局 + margin: auto */
+    .father {
+      width: 500px;
+      height: 500px;
+      background: black;
+      display: flex;
+    }
+    .children {
+      width: 200px;
+      height: 200px;
+      background: white;
+      margin: auto;
+    }
+    /* table布局 */
+    .father {
+      width: 500px;
+      height: 500px;
+      background: black;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .children {
+      width: 200px;
+      height: 200px;
+      background: white;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="father">
+    <div class="children"></div>
+  </div>
+</body>
+</html>

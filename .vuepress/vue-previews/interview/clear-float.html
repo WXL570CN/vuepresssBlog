@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 添加空盒子清除浮动 */
+    .father {
+      width: 500px;
+      background: red;
+    }
+
+    .float-child {
+      width: 100px;
+      height: 100px;
+      background: white;
+    }
+
+    .float-child {
+      float: right;
+    }
+
+    .normal-child {
+      clear: both;
+    }
+
+    /* 伪元素清除浮动 */
+    .father {
+      width: 500px;
+      background: red;
+    }
+    .float-child {
+      width: 100px;
+      height: 100px;
+      background: white;
+    }
+    .float-child {
+        float: right;
+    }
+    .father:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 在浮动的盒子后面添加一个空盒子，并给样式添加该属性 -->
+  <div class="father">
+    <div class="float-child"></div>
+    <div class="normal-child"></div>
+  </div>
+
+  <!-- 优化，在浮动的盒子后面追加一个块元素 -->
+  <div class="father">
+    <div class="float-child"></div>
+  </div>
+</body>
+
+</html>

@@ -1,3 +1,8 @@
+/* 调整全局字体大小 */
+html {
+  font-size: 14px !important;
+}
+
 /* 主页博客文章标题加粗 */
 .post-item-container .title {
   font-weight: 600 !important;
@@ -11,6 +16,12 @@
   }
 }
 
-  .banner-brand__wrapper .banner-brand__content .title {
-    line-height: 1.2 !important;
-  }
+.banner-brand__wrapper .banner-brand__content .title {
+  line-height: 1.2 !important;
+}
+
+p, ol, ul, table {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.8rem !important;
+}
