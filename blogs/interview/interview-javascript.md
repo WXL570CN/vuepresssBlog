@@ -501,4 +501,50 @@ b = 400;
 x();
 ```
 
+## instanceof
+判断对象是否是某一数据类型（如Array）的实例
+```js
+console.log(2 instanceof Number);
+// false
+console.log(true instanceof Boolean);
+// false
+console.log('str' instanceof String);                
+// false
+console.log([] instanceof Array);                    
+// true
+console.log(function(){} instanceof Function);       
+// true
+console.log({} instanceof Object);                   
+// true
+```
+
+
 > 参考：[由浅入深，66条JavaScript面试知识点](https://juejin.cn/post/6844904200917221389)
+
+## valueOf 和 toString
+valueOf和toString是Object.prototype的方法。
+### 概念
+- valueOf: 返回对象的原始值表示
+- toString: 返回对象的字符串表示
+
+### toString
+对象|返回值
+|-|-|
+Array|以逗号分割的字符串，如[1,2]的toString返回值为"1,2"
+Boolean|"True"
+Date|可读的时间字符串，如"Tue Oct 15 2019 12:20:56 GMT+0800 (中国标准时间)"
+Function|声明函数的JS源代码字符串
+Number|"数字值"
+Object|"[object Object]"
+String|"字符串"
+
+### valueOf
+对象|	valueOf返回值
+|-|-|
+Array|	数组本身
+Boolean|	布尔值
+Date|	返回毫秒形式的时间戳
+Function|	函数本身
+Number|	数字值
+Object|	对象本身
+String|	字符串值
