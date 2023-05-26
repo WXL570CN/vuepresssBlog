@@ -18,25 +18,27 @@ date: 2022/06/04
 git log --oneline
 ```
 
-### 2、选择要修改的提交记录
+### 2、标记commit为可编辑
+- 选择要修改的提交记录
 ```bash
-# 修改版本号为0fefa3b的提交记录
-git rebase -i HEAD~0fefa3b
+# 修改第n条的提交记录
+git rebase -i HEAD~n
 ```
-
-### 3、修改提交记录
 - 输入`i`进入编辑模式
 - 找到需要修改注释的一行，并将其头部的`pick`修改为`edit`
 - ESC退出编辑模式
 - 输入`:wq!`保存退出
 
-### 4、更正commit注释内容
+### 3、修改commit
+```bash
+git commit --amend
+```
 - 输入`i`进入编辑模式
 - 第一行即要修改的提交记录，将其修改为正确的注释
 - ESC退出编辑模式
 - 输入`:wq!`保存退出
 
-### 5、提交修改确认
+### 4、提交修改确认
 ```bash
 # 确认
 git rebase --continue
