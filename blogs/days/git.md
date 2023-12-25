@@ -12,7 +12,22 @@ date: 2022/06/04
 - **revert**：回滚到上一个版本
 - **docs**：仅仅修改了文档
 
-## 二、修改已push至远程仓库的日志
+## 二、获取ssh
+进入ssh文件夹查看是否有秘钥  
+```sh
+cd ~/.ssh
+ls
+```
+创建
+```sh
+ssh-keygen -t rsa -C "570@wxl.com"
+```
+显示ssh
+```sh
+cat ~/.ssh/id_rsa.pub
+```
+
+## 三、修改已push至远程仓库的日志
 ### 1、查看日志
 ```bash
 git log --oneline
@@ -46,24 +61,27 @@ git rebase --continue
 git push --force
 ```
 
-## 三、warning: LF will be replaced by CRLF in 
+> 退出修改：git rebase --abort
+
+## 四、warning: LF will be replaced by CRLF in 
 存在符号转义问题  
 windows中的换行符为 `CRLF，` 而在linux下的换行符为`LF`，所以在执行`git add`时出现提示，解决办法：
 ```sh
 git config --global core.autocrlf false
 ```
 
-## 获取ssh
-进入ssh文件夹查看是否有秘钥  
+## 五、撤销合并
+### 1、查看日志
+
 ```sh
-cd ~/.ssh
-ls
+git reflog
 ```
-创建
+### 2、回退
+复制想要恢复到的状态的Hash  
+使用git reset 同时移动 HEAD 和 当前分支的指针  
+该操作会使Hash状态后的所有提交丢失
 ```sh
-ssh-keygen -t rsa -C "570@wxl.com"
+git reset --hard Hash
 ```
-显示ssh
-```sh
-cat ~/.ssh/id_rsa.pub
-```
+
+> 相对安全的方法：`git reset --merge Hash`
